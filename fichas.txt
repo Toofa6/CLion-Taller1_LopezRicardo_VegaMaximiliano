@@ -1,0 +1,4 @@
+espadachin,41,60,34,1
+mago,35,55,25,2
+tanque,60,40,45,1
+arquero,38,55,30,2

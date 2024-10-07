@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>ficha.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #b3ae60;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #cf8e6d;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ficha.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">#include </span><span class="s2">&quot;ficha.h&quot;</span>
+
+<span class="s0">#include </span><span class="s2">&lt;iostream&gt;</span>
+<span class="s0">#include </span><span class="s2">&lt;string&gt;</span>
+
+
+<span class="s1">Ficha::Ficha</span><span class="s3">(</span><span class="s1">std::string subClase</span><span class="s3">, </span><span class="s4">int </span><span class="s1">vida</span><span class="s3">, </span><span class="s4">int </span><span class="s1">ataque</span><span class="s3">, </span><span class="s4">int </span><span class="s1">defensa</span><span class="s3">, </span><span class="s4">int </span><span class="s1">rango</span><span class="s3">)</span>
+    <span class="s1">: subClase</span><span class="s3">(</span><span class="s1">subClase</span><span class="s3">), </span><span class="s1">vida</span><span class="s3">(</span><span class="s1">vida</span><span class="s3">), </span><span class="s1">ataque</span><span class="s3">(</span><span class="s1">ataque</span><span class="s3">),</span><span class="s1">defensa</span><span class="s3">(</span><span class="s1">defensa</span><span class="s3">),</span><span class="s1">rango</span><span class="s3">(</span><span class="s1">rango</span><span class="s3">),</span><span class="s1">habilidadEspecialUsada</span><span class="s3">(</span><span class="s4">false</span><span class="s3">){}</span>
+
+
+    <span class="s1">std::string Ficha::getSubClase</span><span class="s3">() </span><span class="s4">const</span><span class="s3">{</span>
+        <span class="s4">return </span><span class="s1">subClase</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s4">int </span><span class="s1">Ficha::getVida</span><span class="s3">() </span><span class="s4">const </span><span class="s3">{</span>
+    <span class="s4">return </span><span class="s1">vida</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s4">int </span><span class="s1">Ficha::getAtaque</span><span class="s3">() </span><span class="s4">const</span><span class="s3">{</span>
+        <span class="s4">return </span><span class="s1">ataque</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s4">int </span><span class="s1">Ficha::getDefensa</span><span class="s3">() </span><span class="s4">const</span><span class="s3">{</span>
+        <span class="s4">return </span><span class="s1">defensa</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s4">int </span><span class="s1">Ficha::getRango</span><span class="s3">()</span><span class="s4">const </span><span class="s3">{</span>
+        <span class="s4">return </span><span class="s1">rango</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s4">bool </span><span class="s1">Ficha::getHabilidadEspecialUsada</span><span class="s3">() </span><span class="s4">const</span><span class="s3">{</span>
+        <span class="s4">return </span><span class="s1">habilidadEspecialUsada</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s4">void </span><span class="s1">Ficha::activarHabilidadEspecial</span><span class="s3">() {</span>
+    <span class="s4">if</span><span class="s3">(</span><span class="s1">habilidadEspecialUsada</span><span class="s3">) {</span>
+        <span class="s5">// Falta la logica para esto</span>
+        <span class="s1">habilidadEspecialUsada </span><span class="s3">= </span><span class="s4">true</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s3">}</span>
+
+    <span class="s4">void </span><span class="s1">Ficha::recibirDaño</span><span class="s3">(</span><span class="s4">int </span><span class="s1">cantidad</span><span class="s3">) {</span>
+        <span class="s5">// Falta logica aca</span>
+    <span class="s3">}</span>
+
+    <span class="s5">//Metodo para mostrar fichas</span>
+    <span class="s4">void </span><span class="s1">Ficha::mostrarFicha</span><span class="s3">() </span><span class="s4">const </span><span class="s3">{</span>
+        <span class="s1">std::cout </span><span class="s3">&lt;&lt; </span><span class="s2">&quot;Ficha: &quot; </span><span class="s3">&lt;&lt;       </span><span class="s1">subClase</span>
+                  <span class="s3">&lt;&lt; </span><span class="s2">&quot;, Vida: &quot; </span><span class="s3">&lt;&lt;      </span><span class="s1">vida</span>
+                  <span class="s3">&lt;&lt; </span><span class="s2">&quot;, Ataque: &quot; </span><span class="s3">&lt;&lt;    </span><span class="s1">ataque</span>
+                  <span class="s3">&lt;&lt; </span><span class="s2">&quot;, Defensa: &quot; </span><span class="s3">&lt;&lt;   </span><span class="s1">defensa</span>
+                  <span class="s3">&lt;&lt; </span><span class="s2">&quot;, Rango: &quot; </span><span class="s3">&lt;&lt;     </span><span class="s1">rango </span><span class="s3">&lt;&lt; </span><span class="s1">std::endl</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+
+
+    <span class="s1">Ficha::~Ficha</span><span class="s3">() {</span>
+
+    <span class="s3">}</span>
+
+
+</pre>
+</body>
+</html>

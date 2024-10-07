@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>ficha.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #b3ae60;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #cf8e6d;}
+.s4 { color: #bcbec4;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ficha.h</font>
+</center></td></tr></table>
+<pre><span class="s0">#ifndef </span><span class="s1">FICHA_H</span>
+<span class="s0">#define </span><span class="s1">FICHA_H</span>
+<span class="s0">#include </span><span class="s2">&lt;string&gt;</span>
+
+<span class="s3">class </span><span class="s1">Ficha </span><span class="s4">{</span>
+<span class="s3">private</span><span class="s1">:</span>
+    <span class="s1">std::string subClase</span><span class="s4">;           </span><span class="s5">//Subclase de la ficha</span>
+    <span class="s3">int </span><span class="s1">vida</span><span class="s4">;                         </span><span class="s5">//Vida de la ficha</span>
+    <span class="s3">int </span><span class="s1">ataque</span><span class="s4">;                     </span><span class="s5">//Ataque de la ficha</span>
+    <span class="s3">int </span><span class="s1">defensa</span><span class="s4">;                    </span><span class="s5">//Defensa de la ficha</span>
+    <span class="s3">int </span><span class="s1">rango</span><span class="s4">;                      </span><span class="s5">//Rango de ataque de la ficha</span>
+    <span class="s3">bool </span><span class="s1">habilidadEspecialUsada</span><span class="s4">;    </span><span class="s5">//Booleano para ver si la ficha uso su habilidad especial</span>
+
+    <span class="s3">public</span><span class="s1">:</span>
+    <span class="s1">Ficha</span><span class="s4">(</span><span class="s1">std::string subClase</span><span class="s4">, </span><span class="s3">int </span><span class="s1">vida</span><span class="s4">, </span><span class="s3">int </span><span class="s1">ataque</span><span class="s4">, </span><span class="s3">int </span><span class="s1">defensa</span><span class="s4">, </span><span class="s3">int </span><span class="s1">rango</span><span class="s4">);</span>
+
+
+    <span class="s5">// Metodos para stats</span>
+    <span class="s1">std::string getSubClase</span><span class="s4">() </span><span class="s3">const</span><span class="s4">;</span>
+    <span class="s3">int </span><span class="s1">getVida</span><span class="s4">() </span><span class="s3">const</span><span class="s4">;</span>
+    <span class="s3">int </span><span class="s1">getAtaque</span><span class="s4">()</span><span class="s3">const</span><span class="s4">;</span>
+    <span class="s3">int </span><span class="s1">getDefensa</span><span class="s4">()</span><span class="s3">const</span><span class="s4">;</span>
+    <span class="s3">int </span><span class="s1">getRango</span><span class="s4">()</span><span class="s3">const</span><span class="s4">;</span>
+
+    <span class="s5">// Metodo habilidad especial</span>
+    <span class="s3">bool </span><span class="s1">getHabilidadEspecialUsada</span><span class="s4">()</span><span class="s3">const</span><span class="s4">;;</span>
+
+    <span class="s3">void </span><span class="s1">activarHabilidadEspecial</span><span class="s4">();</span>
+
+    <span class="s5">//Metodo para recibir daño</span>
+    <span class="s3">void </span><span class="s1">recibirDaño</span><span class="s4">(</span><span class="s3">int </span><span class="s1">cantidad</span><span class="s4">);</span>
+
+    <span class="s5">//Metodo leer desde archivo</span>
+    <span class="s3">static </span><span class="s1">Ficha cargarDesdeArchivo</span><span class="s4">(</span><span class="s3">const </span><span class="s1">std::string</span><span class="s4">&amp; </span><span class="s1">nombreArchivo</span><span class="s4">, </span><span class="s3">int </span><span class="s1">idFicha</span><span class="s4">);</span>
+
+    <span class="s5">//Metodo para mostrar ficha</span>
+    <span class="s3">void </span><span class="s1">mostrarFicha</span><span class="s4">() </span><span class="s3">const</span><span class="s4">;</span>
+
+    <span class="s5">// Destructor</span>
+    <span class="s1">~Ficha</span><span class="s4">();</span>
+
+<span class="s4">};</span>
+
+<span class="s0">#endif </span><span class="s5">//FICHA_H</span>
+</pre>
+</body>
+</html>

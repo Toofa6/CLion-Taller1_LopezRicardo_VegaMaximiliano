@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>nodo.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #b3ae60;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #cf8e6d;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+nodo.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">#include </span><span class="s2">&quot;Nodo.h&quot;</span>
+
+<span class="s1">Nodo::Nodo</span><span class="s3">(){</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">valor </span><span class="s3">= </span><span class="s5">0</span><span class="s3">;</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">next </span><span class="s3">= </span><span class="s4">nullptr</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s1">Nodo::Nodo</span><span class="s3">(</span><span class="s4">int </span><span class="s1">v</span><span class="s3">){</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">valor </span><span class="s3">= </span><span class="s1">v</span><span class="s3">;</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">next </span><span class="s3">= </span><span class="s4">nullptr</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s1">Nodo::Nodo</span><span class="s3">(</span><span class="s4">int </span><span class="s1">v</span><span class="s3">, </span><span class="s1">Nodo</span><span class="s3">* </span><span class="s1">n</span><span class="s3">){</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">valor </span><span class="s3">= </span><span class="s1">v</span><span class="s3">;</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">next </span><span class="s3">= </span><span class="s1">n</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s4">int </span><span class="s1">Nodo::getValor</span><span class="s3">(){</span>
+    <span class="s4">return this</span><span class="s3">-&gt;</span><span class="s1">valor</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s1">Nodo</span><span class="s3">* </span><span class="s1">Nodo::getNext</span><span class="s3">(){</span>
+    <span class="s4">return this</span><span class="s3">-&gt;</span><span class="s1">next</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s4">void </span><span class="s1">Nodo::setValor</span><span class="s3">(</span><span class="s4">int </span><span class="s1">v</span><span class="s3">){</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">valor </span><span class="s3">= </span><span class="s1">v</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s4">void </span><span class="s1">Nodo::setNext</span><span class="s3">(</span><span class="s1">Nodo</span><span class="s3">* </span><span class="s1">n</span><span class="s3">){</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">next </span><span class="s3">= </span><span class="s1">n</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s1">Nodo::~Nodo</span><span class="s3">(){</span>
+    <span class="s4">delete this</span><span class="s3">-&gt;</span><span class="s1">next</span><span class="s3">;</span>
+<span class="s3">}</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>listaNexoSimple.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #b3ae60;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+listaNexoSimple.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">#include </span><span class="s2">&quot;ListaNexoSimple.h&quot;</span>
+<span class="s0">#include </span><span class="s2">&lt;iostream&gt;</span>
+
+
+<span class="s1">ListaNexoSimple::ListaNexoSimple</span><span class="s3">(){</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">head </span><span class="s3">= </span><span class="s4">nullptr</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s1">ListaNexoSimple::ListaNexoSimple</span><span class="s3">(</span><span class="s1">Nodo</span><span class="s3">* </span><span class="s1">n</span><span class="s3">){</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">head </span><span class="s3">= </span><span class="s1">n</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s1">Nodo</span><span class="s3">* </span><span class="s1">ListaNexoSimple::getHead</span><span class="s3">(){</span>
+    <span class="s4">return this</span><span class="s3">-&gt;</span><span class="s1">head</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s4">void </span><span class="s1">ListaNexoSimple::setHead</span><span class="s3">(</span><span class="s1">Nodo</span><span class="s3">* </span><span class="s1">n</span><span class="s3">){</span>
+    <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">head </span><span class="s3">= </span><span class="s1">n</span><span class="s3">;</span>
+<span class="s3">}</span>
+
+<span class="s4">void </span><span class="s1">ListaNexoSimple::agregar</span><span class="s3">(</span><span class="s4">int </span><span class="s1">x</span><span class="s3">){</span>
+    <span class="s4">if</span><span class="s3">(!</span><span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">head</span><span class="s3">){</span>
+        <span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">head </span><span class="s3">= </span><span class="s4">new </span><span class="s1">Nodo</span><span class="s3">(</span><span class="s1">x</span><span class="s3">);</span>
+    <span class="s3">}</span>
+    <span class="s1">Nodo</span><span class="s3">* </span><span class="s1">aux </span><span class="s3">= </span><span class="s4">this</span><span class="s3">-&gt;</span><span class="s1">head</span><span class="s3">;</span>
+    <span class="s4">while</span><span class="s3">(</span><span class="s1">aux</span><span class="s3">-&gt;</span><span class="s1">getNext</span><span class="s3">() != </span><span class="s4">nullptr</span><span class="s3">){</span>
+        <span class="s1">aux </span><span class="s3">= </span><span class="s1">aux</span><span class="s3">-&gt;</span><span class="s1">getNext</span><span class="s3">();</span>
+    <span class="s3">}</span>
+    <span class="s1">aux</span><span class="s3">-&gt;</span><span class="s1">setNext</span><span class="s3">(</span><span class="s4">new </span><span class="s1">Nodo</span><span class="s3">(</span><span class="s1">x</span><span class="s3">));</span>
+<span class="s3">}</span>
+
+<span class="s1">ListaNexoSimple::~ListaNexoSimple</span><span class="s3">(){</span>
+    <span class="s4">delete this</span><span class="s3">-&gt;</span><span class="s1">head</span><span class="s3">;</span>
+<span class="s3">}</span></pre>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# ninja log v6
+51	650	7499512022023757	CMakeFiles/Taller1EstructuraDeDatosw.dir/tablero.cpp.obj	548aef7ae5084f4
+56	563	7499512022073795	CMakeFiles/Taller1EstructuraDeDatosw.dir/nodo.cpp.obj	89fe05bec69e1109
+54	635	7499512022043766	CMakeFiles/Taller1EstructuraDeDatosw.dir/listaNexoSimple.cpp.obj	5b0a071acbf7e5bd
+15	620	7499529209895760	CMakeFiles/Taller1EstructuraDeDatosw.dir/main.cpp.obj	5a762b5cae8213da
+48	706	7499512021993727	CMakeFiles/Taller1EstructuraDeDatosw.dir/ficha.cpp.obj	f8143c7160ea60ef
+620	731	7499529215951267	Taller1EstructuraDeDatosw.exe	9efb8da06614b664
+68	1013	7499673546855618	CMakeFiles/Taller1EstructuraDeDatosw.dir/nodo.cpp.obj	d893649505332722
+51	1022	7499673546680897	CMakeFiles/Taller1EstructuraDeDatosw.dir/listaNexoSimple.cpp.obj	b85f1b183162f82c
+40	1031	7499673546579133	CMakeFiles/Taller1EstructuraDeDatosw.dir/tablero.cpp.obj	10dd28366997510d
+32	1115	7499673546501452	CMakeFiles/Taller1EstructuraDeDatosw.dir/ficha.cpp.obj	211757177942f935
+23	1246	7499673546405282	CMakeFiles/Taller1EstructuraDeDatosw.dir/main.cpp.obj	191cb12bc284f153
+1246	1587	7499673558634316	Taller1EstructuraDeDatosw.exe	5208908e17b10bc
+28	952	7499674401154917	CMakeFiles/Taller1EstructuraDeDatosw.dir/main.cpp.obj	191cb12bc284f153
+953	1126	7499674410409757	Taller1EstructuraDeDatosw.exe	5208908e17b10bc
+30	966	7499674651361623	CMakeFiles/Taller1EstructuraDeDatosw.dir/main.cpp.obj	191cb12bc284f153
+967	1117	7499674660733885	Taller1EstructuraDeDatosw.exe	5208908e17b10bc
